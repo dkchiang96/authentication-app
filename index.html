@@ -1,0 +1,37 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1dE76-sRo0DlguVlO2cwbtMKPOsx2Nzw_8E_FdGxGD3g/edit?usp=sharing -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h2 id="form-title">Login</h2>
+    <img src="login.png" alt="" height="250px" />
+
+    <div>
+      <label for="username">Username</label>
+      <input id="username" type="text" required />
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input id="password" type="password" required />
+    </div>
+
+    <div id="confirm-password-container" style="display: none">
+      <label for="confirm-password">Confirm Password</label>
+      <input id="confirm-password" type="password" />
+    </div>
+
+    <button id="submit" onclick="handleSubmit()">Login</button>
+    <p>
+      Don't have an account?
+      <span id="toggle-link" onclick="toggleAuth()">Sign up</span>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
